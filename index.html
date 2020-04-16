@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Snippet Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/themes/prism.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/prism.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Build your pizza</h1>
+        <h2>Create your order:</h2>
+
+        <form>
+            <fieldset>
+                <legend>How big pizza do you want?</legend>
+                <div id="pizza_size">
+                    <input id="small" type="radio" name="pizzaSize" required>
+                    <label for="small">small</label>
+
+                    <input id="medium" type="radio" name="pizzaSize" required>
+                    <label for="medium">medium</label>
+
+                    <input id="large" type="radio" name="pizzaSize" required>
+                    <label for="large">large</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Any toppings?</legend>
+                <div id="pizza_toppings">
+                    <input id="Pepperoni" type="checkbox">
+                    <label for="Pepperoni">Pepperoni</label>
+
+                    <input id="Mushrooms" type="checkbox">
+                    <label for="Mushrooms">Mushrooms</label>
+
+                    <input id="Onions" type="checkbox">
+                    <label for="Onions">Onions</label>
+
+                    <input id="Sausage" type="checkbox">
+                    <label for="Sausage">Sausage</label>
+
+                    <input id="ExtraCheese" type="checkbox">
+                    <label for="ExtraCheese">Extra Cheese</label>
+
+                    <input id="BlackOlives." type="checkbox">
+                    <label for="BlackOlives.">Black Olives</label>
+
+                    <input id="GreenPeppers" type="checkbox">
+                    <label for="GreenPeppers">Green Peppers</label>
+
+                    <input id="Pineapple" type="checkbox">
+                    <label for="Pineapple">Pineapple</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Let's talk about the crust!</legend>
+                <div id="pizza_crust">
+                    <input id="thinCrust" type="radio" name="pizzaSize" required>
+                    <label for="thinCrust">Thin Crust</label>
+
+                    <input id="thickCrust" type="radio" name="pizzaSize" required>
+                    <label for="thickCrust">Thick Crust</label>
+
+                    <input id="deepCrust" type="radio" name="pizzaSize" required>
+                    <label for="deepCrust">Deep Crust</label>
+
+                    <input id="cheeseFilledCrust" type="radio" name="pizzaSize" required>
+                    <label for="cheeseFilledCrust">Cheese Fille Crust</label>
+
+                    <input id="stuffedCrust" type="radio" name="pizzaSize" required>
+                    <label for="stuffedCrust">Stuffed Crust</label>
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <label>What time would you like to get your dish?</label>
+                <div>
+                    <input type="datetime-local" name="pickUpTime" id="pickUpTime" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label>How should we deliver your pizza?</label>
+                <div>
+                    <select name="deliveryoption" id="deliveryoption">
+                        <option value="Wolt">Wolt</option>
+                        <option value="Pickup">Pickup</option>
+                        <option value="Dunno">Dunno</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label>Share some info so we can find you:</label>
+                <div>
+                    <label for="text">your name</label>
+                    <input type="text" placeholder="First + Last Name" id="text">
+                </div>
+                <div>
+                    <label for="email">your e-mail</label>
+                    <input type="email" placeholder="yourname@domain.com" id="email">
+                </div>
+            </fieldset>
+
+
+            <button type="submit">send the order</button>
+        </form>
+
+
+    </div>
+    <!-- if you need to show copy-pastable code, you can use the following-->
+    <!--<pre><code class="language-html"><input type=""></code></pre>-->
+</body>
+<script>
+    document.querySelectorAll("pre code").forEach((el) => {
+        el.textContent = el.innerHTML;
+    });
+</script>
+
+</html>
